@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Comandos</title>
+
+    <style>
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: lightcyan;
+    }
+
+    body {
+    box-shadow: 5px 5px 10px #012e4073;
+    width: 800px;
+    border-radius: 15px;
+    margin: auto;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header > h1{
+        padding: 30px 0;
+        text-align: center;
+        font-size: 2.2em;
+        color: rgb(15, 15, 190);
+    }
+
+    h2{
+        margin: 10px 0;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 2em;
+        color: rgb(60, 60, 200);
+    }
+
+    h3{
+        padding: 15px 0 15px 25px;
+        font-size: 1.4em;
+        color: rgb(14, 14, 158);
+    }
+
+    ul > li > p {
+        padding: 10px;
+    }
+
+    ul > li {
+        list-style-type: none;
+        padding-left: 50px;
+    }
+
+    ul > li > p > strong > mark{
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    ul#i1 > li > p > strong > mark{
+        background: orange; 
+        
+    }
+
+    ul#i2 > li > p > strong > mark{
+        background: rgb(0, 255, 64); 
+    }
+
+    ul#i3 > li > p > strong > mark{
+        background: rgb(0, 195, 255); 
+    }
+
+    ul#i4 > li > p > strong > mark{
+        background: #ff0505; 
+    }
+
+    ul#i5 > li > p > strong > mark{
+        background: rgb(170, 0, 255); 
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Administração de Servidores</h1><hr>
+    </header>
+<h2>Gerenciando Comandos</h2>
+
+<h3>Comandos Básicos</h3>
+
+<ul id="i1">
+    <li>
+        <p><strong><mark>pwd</mark></strong> - Comando para mostrar o diretório atual.</p>
+    </li>
+    <li>
+         <p><strong><mark>ls</mark></strong> - Comando para listar os arquivos do diretório.</p>
+    </li>
+    <li>
+        <p><strong><mark>ls -la</mark></strong> - Mostrar os arquivos detalhados.</p>
+    </li>
+   <li>
+    <p><strong><mark>date</mark></strong> - Mostrar a data.</p>
+   </li>
+   <li>
+    <p><strong><mark>mk dir</mark></strong> - Criar um novo diretório.</p>
+   </li>
+   <li>
+    <p><strong><mark>touch</mark></strong> - Criar um novo arquivo.</p>
+   </li>
+   <li>
+    <p><strong><mark>vim nomedoarquivo</mark></strong> - Abrir o arquivo.</p>
+   </li>
+   <li>
+    <p><strong><mark>kat nomedoarquivo</mark></strong> - Zipar o arquivo sem abrir.</p>
+   </li> 
+   <li>
+        <p><strong><mark>rm nomedoarquivo</mark></strong> - Comando para deletar arquivo ou diretório.</p>
+    </li>  
+</ul>
+<h3>Comandos de Inserção</h3>
+    <ul id="i2">
+        <li>
+            <p><strong> <mark>i</mark></strong> - Inserir conteúdo antes do cursor.</p>
+        </li>
+        <li>
+            <p><strong> <mark>a</mark></strong> - Inserir conteúdo depois do cursor.</p>
+        </li>
+        <li>
+            <p><strong> <mark>I</mark></strong> - Ir para o início da linha.</p>
+        </li>
+        <li>
+            <p><strong> <mark>A</mark></strong> - Ir para o final da linha.</p>
+        </li>
+        <li>
+            <p><strong><mark>o</mark></strong> - Quebra a linha para baixo.</p>
+        </li>
+        <li>
+            <p><strong><mark>O</mark></strong> - Quebra a linha para cima.</p>
+        </li>
+    </ul>
+<h3>Comandos Normais</h3>
+<ul id="i3">
+    <li>
+        <p><strong><mark>h</mark></strong> - Move o cursor para esquerda.</p>
+    </li>
+    <li>
+        <p><strong><mark>l</mark></strong> - Move o cursor para a direita.</p>
+    </li>
+    <li>
+        <p><strong><mark>j</mark></strong> - Move o cursor para baixo.</p>
+    </li>
+    <li>
+        <p><strong><mark>k</mark></strong> - Move o cursor para cima.</p>
+    </li>
+    <li>
+        <p><strong><mark>gg</mark></strong> - Ir para o início do arquivo.</p>
+    </li>
+    <li>
+        <p><strong><mark>G</mark></strong> - Ir para o final do arquivo.</p>
+    </li>
+    <li>
+        <p><strong><mark>0</mark></strong> - Ir para o início da linha.</p>
+    </li>
+    <li>
+        <p><strong><mark>Shift + $</mark></strong> - Ir para o final da linha.</p>
+    </li>
+    <li>
+        <p><strong><mark>w</mark></strong> - Pular palavra para frente.</p>
+    </li>
+    <li>
+        <p><strong><mark>b</mark></strong> - Pular palavra para trás.</p>
+    </li>
+</ul>
+
+<h3>Copiar, colar e deletar</h3>
+
+<ul id="i4">
+    <li>
+        <p><strong><mark>yy</mark></strong>- Copiar linha.</p>
+    </li>
+    <li>
+        <p><strong><mark>p</mark></strong> - Colar a linha copiada.</p>
+    </li>
+    <li>
+        <p><strong><mark>yw</mark></strong> - Copiar palavra.</p>
+    </li>
+    <li>
+        <p><strong><mark>dd</mark></strong> - Apagar uma linha.</p>
+    </li>
+    <li>
+        <p><strong><mark>dw</mark></strong> - Apagar uma palavra.</p>
+    </li>
+    <li>
+        <p><strong><mark>x</mark></strong> - Deletar um caractere específico.</p>
+    </li>
+    <li>
+        <p><strong><mark>u</mark></strong> - Desfazer.</p>
+    </li>
+    <li>
+        <p><strong><mark>Ctrl + r</mark></strong> - Refazer.</p>
+    </li>
+</ul>
+
+<h3>Busca e substituição</h3>
+<ul id="i5">
+    <li>
+        <p><strong><mark>/</mark></strong> - Comando para buscar determinada palavra (a palavra deve ser digitada depois da barra.)</p>
+    </li>
+    <li>
+        <p><strong><mark>n</mark></strong> - Caso exista mais de uma palavra na busca, digita (n) para pular para a próxima ocorrência.</p>
+    </li>
+    <li>
+        <p><strong><mark>N</mark></strong>  - Voltar para a ocerrência anterior.</p>
+    </li>
+    <li>
+        <p><strong><mark>:s/palavra/novapalavra</mark></strong> - Procurar palavras abaixo e substituir.</p>
+    </li>
+    <li>
+        <p><strong><mark>%s/palavraantiga/palavranova</mark></strong> - Comando para procurar e subtituir palavra em todo o arquivo.</p>
+    </li>
+</ul>
+</body>
+</html>
